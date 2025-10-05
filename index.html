@@ -1,35 +1,235 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deependra's portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BBDNIIT – Clone (Readable)</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Deependra Pal Portfolio</h1>
-    <h2>I'm a Web Developer</h2>
-    <hr/>
-   <h3> <a href="./public/movie-ranking.html">Moving Ranking Project </a></h3>
-   <h3><img src="./assets/images/MOVIE RANKING.png"/></h3>
-   <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-   <h3><img src="./assets/images/BDAY.png"/></h3>
-   <hr/>
-   <a href="./public/about.html">About Me</a>
-   <a href="./public/contact.html">Contact Me</a>
+  <header class="site-header" role="banner">
+    <div class="topbar">
+      <div class="container">
+        <div>Admissions Open 2025 • NAAC Accredited</div>
+        <nav aria-label="quick links">
+          <a href="#">Apply Now</a>
+          <span aria-hidden="true">·</span>
+          <a href="#">Student Login</a>
+          <span aria-hidden="true">·</span>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="navbar" role="navigation" aria-label="primary">
+      <div class="container">
+        <a class="brand" href="#" aria-label="BBDNIIT Home">
+          <img src="https://bbdniit.ac.in/wp-content/uploads/2022/11/cropped-BBD_NIIT_logo-1.png" alt="BBDNIIT Logo" />
+          <div>
+            <div class="title">BBDNIIT</div>
+            <div class="subtitle">Babu Banarasi Das Northern India Institute of Technology</div>
+          </div>
+        </a>
+
+        <nav class="nav-links" data-nav-links>
+          <a href="#">About</a>
+          <a href="#">Admissions</a>
+          <a href="#">Programs</a>
+          <a href="#">Placements</a>
+          <a href="#">Campus Life</a>
+          <a href="#">Research</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="button">Brochure</button>
+          <button class="button primary">Apply</button>
+          <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false" data-mobile-toggle>☰</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Highlights">
+      <div class="container">
+        <div class="hero-slide" data-hero-slide>
+          <div>
+            <h1>Transforming Students into Industry-Ready Professionals</h1>
+            <p>Join a vibrant campus life with cutting-edge labs, expert faculty, and strong placement support.</p>
+            <div class="cta">
+              <button class="button primary">Explore Programs</button>
+              <button class="button">Take a Tour</button>
+            </div>
+          </div>
+          <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1400&auto=format&fit=crop" alt="Campus building"/>
+        </div>
+        <div class="hero-slide" data-hero-slide hidden>
+          <div>
+            <h1>Strong Industry Connect and Placements</h1>
+            <p>Top recruiters visit our campus every year offering excellent career opportunities.</p>
+            <div class="cta">
+              <button class="button primary">Placement Cell</button>
+              <button class="button">Recruiters</button>
+            </div>
+          </div>
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop" alt="Students collaborating"/>
+        </div>
+        <div class="hero-dots" role="tablist" aria-label="Hero slides">
+          <button data-hero-dot aria-label="Slide 1" aria-current="true"></button>
+          <button data-hero-dot aria-label="Slide 2"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="programs-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="programs-heading">Programs Offered</h2>
+          <div class="muted">Undergraduate and Postgraduate programs across disciplines</div>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop" alt="Computer Science"/>
+            <div class="content">
+              <strong>B.Tech - Computer Science</strong>
+              <div class="meta">AI, Data Science, Full-Stack</div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop" alt="Electronics"/>
+            <div class="content">
+              <strong>B.Tech - Electronics</strong>
+              <div class="meta">VLSI, Embedded Systems</div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=1200&auto=format&fit=crop" alt="Mechanical"/>
+            <div class="content">
+              <strong>B.Tech - Mechanical</strong>
+              <div class="meta">Automation, Manufacturing</div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981d?q=80&w=1200&auto=format&fit=crop" alt="MBA"/>
+            <div class="content">
+              <strong>MBA</strong>
+              <div class="meta">Marketing, Finance, HR</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="notice-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="notice-heading">Notices</h2>
+          <div class="muted">Latest announcements and circulars</div>
+        </div>
+        <div class="grid-2">
+          <div class="notice"><a href="#">Odd Semester Examination Schedule 2025</a></div>
+          <div class="notice"><a href="#">Admissions Open for B.Tech Lateral Entry</a></div>
+          <div class="notice"><a href="#">Workshop on AI/ML – Registration</a></div>
+          <div class="notice"><a href="#">Holiday Notice: Diwali Break</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="events-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="events-heading">Events</h2>
+          <div class="muted">Academic and cultural happenings</div>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?q=80&w=1200&auto=format&fit=crop" alt="Convocation"/>
+            <div class="content">
+              <strong>Annual Convocation</strong>
+              <div class="meta">Dec 15, 2025</div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?q=80&w=1200&auto=format&fit=crop" alt="Hackathon"/>
+            <div class="content">
+              <strong>24h Hackathon</strong>
+              <div class="meta">Nov 20-21, 2025</div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1200&auto=format&fit=crop" alt="Cultural Fest"/>
+            <div class="content">
+              <strong>Cultural Fest</strong>
+              <div class="meta">Jan 10, 2026</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="recruiters-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="recruiters-heading">Top Recruiters</h2>
+          <div class="muted">Our students are hired by leading companies</div>
+        </div>
+        <div class="partner-logos">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Logo_Tata_Consultancy_Services.svg" alt="TCS logo"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Infosys_logo.svg" alt="Infosys logo"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Wipro_Logo.svg" alt="Wipro logo"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/HCLTech_Logo.svg" alt="HCL logo"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Capgemini_201x_logo.svg" alt="Capgemini logo"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Accenture.svg" alt="Accenture logo"/>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div>
+        <a class="brand" href="#">
+          <img src="https://bbdniit.ac.in/wp-content/uploads/2022/11/cropped-BBD_NIIT_logo-1.png" alt="BBDNIIT Logo" />
+          <div>
+            <div class="title">BBDNIIT</div>
+            <div class="subtitle">NAAC Accredited Institution</div>
+          </div>
+        </a>
+        <p class="muted">Empowering education with industry-focused programs and holistic development.</p>
+      </div>
+      <div>
+        <strong>Academics</strong>
+        <div><a href="#">Programs</a></div>
+        <div><a href="#">Admissions</a></div>
+        <div><a href="#">Examinations</a></div>
+      </div>
+      <div>
+        <strong>Campus</strong>
+        <div><a href="#">Life @ BBDNIIT</a></div>
+        <div><a href="#">Clubs</a></div>
+        <div><a href="#">Facilities</a></div>
+      </div>
+      <div>
+        <strong>Connect</strong>
+        <div><a href="#">Contact</a></div>
+        <div><a href="#">Careers</a></div>
+        <div><a href="#">Alumni</a></div>
+      </div>
+    </div>
+    <div class="subfooter">
+      <div class="container">
+        <div>© 2025 BBDNIIT Clone for Educational Use</div>
+        <div>
+          <a href="#">Terms</a> · <a href="#">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
